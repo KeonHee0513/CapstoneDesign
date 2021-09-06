@@ -1,0 +1,6 @@
+classes=8
+train=/content/drive/MyDrive/yolo_project/data/train_kitti.txt
+valid=/content/drive/MyDrive/yolo_project/data/val_kitti.txt
+names=/content/drive/MyDrive/yolo_project/data/kitti.names
+backup=backup/
+eval=kittiv1
