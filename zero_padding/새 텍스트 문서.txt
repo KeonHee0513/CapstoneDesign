@@ -2,8 +2,6 @@
 
 2. image 채널 중 1개의 채널 실행 가능.
 
-3. 채널의 width와 height는 같아야 실행 됨.(같지 않아도 실행되도록 보완해야 됨)
+3. 채널의 W, H와 P 값에 상관 없이 실행 됨.
 
-4. padding은 상관 없이 실행 됨
-
-5. 이미지는 0에서 255(=FF)이므로 data width는 8bit으로 함.(weight이나 피쳐맵 데이터 크기를 보면서 DATA_WIDTH 조절 예정)
+4. 이미지는 0에서 255(=FF)이므로 data width는 8bit으로 함.(weight이나 피쳐맵 데이터 크기를 보면서 DATA_WIDTH 조절 예정)
