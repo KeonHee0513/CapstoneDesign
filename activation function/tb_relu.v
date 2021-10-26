@@ -1,10 +1,10 @@
 module tb_relu();
-   parameter fm_width = 5, fm_height = 5, value_size = 16;
+   parameter W = 5, H = 5, DATA_WIDTH = 16;
 
-   reg [fm_width*fm_height*value_size-1:0] in;
-   wire [fm_width*fm_height*value_size-1:0] out;
+   reg [W*H*DATA_WIDTH-1:0] in;
+   wire [W*H*DATA_WIDTH-1:0] out;
 
-   relu #(fm_width, fm_height, value_size) relu1 (in, out);
+   ReluSingle #(W, H, DATA_WIDTH) relu1 (in, out);
 
    initial begin
 	in = 400'hffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff_0fff_ffff;
